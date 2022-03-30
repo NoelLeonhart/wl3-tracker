@@ -1,0 +1,86 @@
+/* Start element Styles */
+html {
+    background-color: #404040;
+}
+
+body {
+    color: white;
+}
+/* END ELEMENT STYLES */
+
+/* Start Map Styles */
+#map-tracker {
+    float: right;
+    background-color: rgb(34, 34, 34);
+    padding: 10px;
+    height: 800px;
+    width: 1000px;
+}
+
+#north {
+    background-image: url("../images/north.png");
+}
+
+#west {
+    background-image: url("../images/west.png");
+}
+
+#south {
+    background-image: url("../images/south.png");
+}
+
+#east {
+    background-image: url("../images/east.png");
+}
+
+#out-of-the-woods {
+    left: 40px;
+    top: 80px;
+}
+
+#the-peaceful-village {
+    left: 40px;
+    top: 150px;
+}
+
+#the-vast-plains {
+    left: 175px;
+    top: 90px;
+}
+
+#bank-of-the-wild-river {
+    left: 140px;
+    top: 110px;
+}
+
+#the-tidal-coast {
+    left: 195px;
+    top: 120px;
+}
+
+#turtle-rocks {
+    left: 300px;
+    top: 96px;
+}
+
+#the-temple {
+    left: 115px;
+    top: -64px;
+}
+
+.map {
+    float: left;
+    height: 280px;
+    width: 360px;
+    background-size: cover;
+    margin: 50px 50px;
+}
+
+.node {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    border: 2px solid black;
+}
+/* END MAP STYLES */
