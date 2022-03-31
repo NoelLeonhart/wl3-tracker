@@ -33,6 +33,7 @@ body {
     background-image: url("../images/east.png");
 }
 
+/* NORTH NODES */
 #out-of-the-woods {
     left: 40px;
     top: 80px;
@@ -66,6 +67,37 @@ body {
 #the-temple {
     left: 115px;
     top: -64px;
+}
+
+/* WEST NODES */
+#desert-ruins {
+    left: 20px;
+    top: 175px;
+}
+
+#the-volcanos-base {
+    left: 110px;
+    top: 90px;
+}
+
+#the-pool-of-rain {
+    left: 160px;
+    top: 127px;
+}
+
+#a-town-in-chaos {
+    left: 275px;
+    top: 60px;
+}
+
+#beneath-the-waves {
+    left: 160px;
+    top: 155px;
+}
+
+#the-west-crater {
+    left: 160px;
+    top: -100px;
 }
 
 .map {
