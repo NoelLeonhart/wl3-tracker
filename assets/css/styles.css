@@ -1,6 +1,15 @@
+@font-face {
+    font-family: 'WarioWare';
+    src: url('../fonts/Wariowareinc-BWWdn.ttf') format('truetype');
+}
+
+* {
+    font-family: "WarioWare";
+}
+
 /* Start element Styles */
 html {
-    background-color: #404040;
+    background-color: #4c0d4e;
 }
 
 body {
@@ -8,29 +17,67 @@ body {
 }
 /* END ELEMENT STYLES */
 
+/* Start Item-Tracker Styles */
+#item-tracker {
+    float: left;
+    background-color: #1f0b27;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#item-tracker div {
+    text-align: center;
+    margin: 0 20px 30px 20px;
+}
+
+#item-tracker p {
+    margin: 10px;
+    font-size: 40px;
+    text-align: center;
+}
+
+#item-tracker div p {
+    font-size: 30px;
+}
+
+.item {
+    filter: grayscale(100%);
+    margin: 5px 5px;
+    cursor: pointer;
+}
+
+.item-name {
+    height: 30px;
+}
+/* END ITEM-TRACKER STYLES */
+
 /* Start Map Styles */
 #map-tracker {
-    float: right;
-    background-color: rgb(34, 34, 34);
+    margin: 10px;
+    float: left;
+    background-color: #1f0b27;
     padding: 10px;
-    height: 800px;
-    width: 1000px;
+    height: auto;
+    width: 780px;
+    border-radius: 10px;
 }
 
 #north {
-    background-image: url("../images/north.png");
+    background-image: url("../images/maps/north.png");
 }
 
 #west {
-    background-image: url("../images/west.png");
+    background-image: url("../images/maps/west.png");
 }
 
 #south {
-    background-image: url("../images/south.png");
+    background-image: url("../images/maps/south.png");
 }
 
 #east {
-    background-image: url("../images/east.png");
+    background-image: url("../images/maps/east.png");
 }
 
 /* NORTH NODES */
@@ -100,12 +147,80 @@ body {
     top: -100px;
 }
 
+/* SOUTH NODES */
+
+#the-grasslands {
+    left: 20px;
+    top: 136px;
+}
+
+#the-big-bridge {
+    left: 95px;
+    top: 112px;
+}
+
+#tower-of-revival {
+    left: 240px;
+    top: 88px;
+}
+
+#the-steep-canyon {
+    left: 175px;
+    top: 120px;
+}
+
+#cave-of-flames {
+    left: 140px;
+    top: -60px;
+}
+
+#above-the-clouds {
+    left: 315px;
+    top: -100px;
+}
+
+/* EAST NODES */
+#the-stagnant-swamp {
+    left: 20px;
+    top: 175px;
+}
+
+#the-frigid-sea {
+    left: 195px;
+    top: 210px;
+}
+
+#castle-of-illusions {
+    left: 115px;
+    top:  70px;
+}
+
+#the-colossal-hole {
+    left: 195px;
+    top: 80px;
+}
+
+#the-warped-void {
+    left: 300px;
+    top: 100px;
+}
+
+#the-east-crater {
+    left: 115px;
+    top: -100px;
+}
+
+#forest-of-fear {
+    left: 300px;
+    top: -25px;
+}
+
 .map {
     float: left;
     height: 280px;
     width: 360px;
     background-size: cover;
-    margin: 50px 50px;
+    margin: 15px 15px;
 }
 
 .node {
@@ -114,5 +229,10 @@ body {
     width: 20px;
     background-color: red;
     border: 2px solid black;
+    cursor: pointer;
 }
 /* END MAP STYLES */
+
+#something {
+    clear: both;
+}
