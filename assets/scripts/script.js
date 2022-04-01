@@ -3,6 +3,7 @@ var key_item = [...document.querySelectorAll(".key-item")];
 var up_item = [...document.querySelectorAll(".up-item")];
 var un_item = [...document.querySelectorAll(".un-item")];
 var item = [...document.querySelectorAll(".item")];
+var chest = [...document.querySelectorAll(".chest")];
 var music_text = document.getElementById("whats-this-m");
 var key_text = document.getElementById("whats-this-k");
 var up_text = document.getElementById("whats-this-up");
@@ -56,4 +57,17 @@ item.forEach(function (elem) {
     elem.addEventListener('click', e => {
         elem.style.filter = "grayscale(0%)";
     })
+})
+
+chest.forEach(function (elem) {
+    elem.addEventListener('click', e => {
+        elem.src = elem.src.replace('-closed.png', '-open.png');
+     })
+     elem.addEventListener('contextmenu', e => {
+        elem.src = elem.src.replace('-open.png', '-closed.png');
+        e.preventDefault();
+     })
+    // elem.addEventListener('mouseenter', e => {
+    //     console.log(elem.src.replace('.png', '-open.png'))
+    // })
 })

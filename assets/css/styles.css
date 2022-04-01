@@ -58,7 +58,7 @@ body {
     margin: 10px;
     float: left;
     background-color: #1f0b27;
-    padding: 10px;
+    padding: 30px;
     height: auto;
     width: 780px;
     border-radius: 10px;
@@ -144,7 +144,7 @@ body {
 
 #the-west-crater {
     left: 160px;
-    top: -100px;
+    top: -90px;
 }
 
 /* SOUTH NODES */
@@ -233,6 +233,51 @@ body {
 }
 /* END MAP STYLES */
 
-#something {
-    clear: both;
+/*👉Start Node-Tooltip Styles👈*/
+
+.tooltip .tooltiptext {
+    float: left;
+    visibility: hidden;
+    width: 160px;
+    background-color: rgb(66, 49, 80);
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    border: 2px solid black;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.5);
+
+    /* position tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
 }
+
+.tooltiptext p {
+    text-align: center;
+    font-size: 20px;
+    margin: 2px;
+}
+
+/* tooltip arrow */
+.tooltip .tooltiptext:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+/* END NODE-TOOLTIP STYLES */
