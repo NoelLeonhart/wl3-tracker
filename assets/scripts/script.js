@@ -1,3 +1,14 @@
+var items = {
+    "Lantern": false,
+    "Magical Fire": false,
+    "Torch": false,
+    "First Gear": false,
+    "Second Gear": false,
+    "Warp Compact": false,
+    "Jar": false,
+    "Treasure Map": false,
+}
+
 var music_item = [...document.querySelectorAll(".music-item")];
 var key_item = [...document.querySelectorAll(".key-item")];
 var up_item = [...document.querySelectorAll(".up-item")];
@@ -53,9 +64,13 @@ item.forEach(function (elem) {
     elem.addEventListener('contextmenu', e => {
        elem.style.filter = "grayscale(100%)";
        e.preventDefault();
+       items[elem.alt] = false;
+       console.log(elem.alt + " has been set to: " + items[elem.alt]);
     })
     elem.addEventListener('click', e => {
         elem.style.filter = "grayscale(0%)";
+        items[elem.alt] = true;
+        console.log(elem.alt + " has been set to: " + items[elem.alt]);
     })
 })
 
