@@ -81,32 +81,32 @@ body {
 }
 
 /* NORTH NODES */
-#out-of-the-woods {
+#level-0 {
     left: 40px;
     top: 80px;
 }
 
-#the-peaceful-village {
+#level-2 {
     left: 40px;
     top: 150px;
 }
 
-#the-vast-plains {
+#level-3 {
     left: 175px;
     top: 90px;
 }
 
-#bank-of-the-wild-river {
+#level-4 {
     left: 140px;
     top: 110px;
 }
 
-#the-tidal-coast {
+#level-5 {
     left: 195px;
     top: 120px;
 }
 
-#turtle-rocks {
+#level-6 {
     left: 300px;
     top: 96px;
 }
@@ -117,100 +117,100 @@ body {
 }
 
 /* WEST NODES */
-#desert-ruins {
+#level-7 {
     left: 20px;
     top: 175px;
 }
 
-#the-volcanos-base {
+#level-8 {
     left: 110px;
     top: 90px;
 }
 
-#the-pool-of-rain {
+#level-9 {
     left: 160px;
     top: 127px;
 }
 
-#a-town-in-chaos {
+#level-10 {
     left: 275px;
     top: 60px;
 }
 
-#beneath-the-waves {
+#level-11 {
     left: 160px;
     top: 155px;
 }
 
-#the-west-crater {
+#level-12 {
     left: 160px;
     top: -90px;
 }
 
 /* SOUTH NODES */
 
-#the-grasslands {
+#level-13 {
     left: 20px;
     top: 136px;
 }
 
-#the-big-bridge {
+#level-14 {
     left: 95px;
     top: 112px;
 }
 
-#tower-of-revival {
+#level-15 {
     left: 240px;
     top: 88px;
 }
 
-#the-steep-canyon {
+#level-16 {
     left: 175px;
     top: 120px;
 }
 
-#cave-of-flames {
+#level-17 {
     left: 140px;
     top: -60px;
 }
 
-#above-the-clouds {
+#level-18 {
     left: 315px;
     top: -100px;
 }
 
 /* EAST NODES */
-#the-stagnant-swamp {
+#level-19 {
     left: 20px;
     top: 175px;
 }
 
-#the-frigid-sea {
+#level-20 {
     left: 195px;
     top: 210px;
 }
 
-#castle-of-illusions {
+#level-21 {
     left: 115px;
     top:  70px;
 }
 
-#the-colossal-hole {
+#level-22 {
     left: 195px;
     top: 80px;
 }
 
-#the-warped-void {
+#level-23 {
     left: 300px;
     top: 100px;
 }
 
-#the-east-crater {
+#level-24 {
     left: 115px;
     top: -100px;
 }
 
-#forest-of-fear {
+#level-25 {
     left: 300px;
     top: -25px;
 }
@@ -227,10 +227,22 @@ body {
     position: relative;
     height: 20px;
     width: 20px;
-    background-color: red;
     border: 2px solid black;
     cursor: pointer;
 }
+
+.node-red {
+    background-color: red;
+}
+
+.node-orange {
+    background-color: rgb(255, 123, 0);
+}
+
+.node-green {
+    background-color: rgb(0, 255, 34);
+}
+
 /* END MAP STYLES */
 
 /*👉Start Node-Tooltip Styles👈*/
@@ -262,6 +274,24 @@ body {
     text-align: center;
     font-size: 20px;
     margin: 2px;
+}
+
+.tooltiptext div {
+    position: relative;
+    float: left;
+    border: 2px solid black;
+    height: 8px;
+    width: 8px;
+    margin: 0 12px;
+    left: 8px;
+}
+
+.available {
+    background-color: rgb(0, 255, 34);
+}
+
+.unavailable {
+    background-color: red;
 }
 
 /* tooltip arrow */
